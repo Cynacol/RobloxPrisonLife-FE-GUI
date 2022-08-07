@@ -77,6 +77,7 @@ Items.TextSize = 25.000
 
 ItemsPage.Name = "ItemsPage"
 ItemsPage.Parent = Page1
+ItemsPage.Active = true
 ItemsPage.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
 ItemsPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ItemsPage.BorderSizePixel = 5
@@ -225,6 +226,7 @@ Teleports.TextSize = 25.000
 
 TeleportsPage.Name = "TeleportsPage"
 TeleportsPage.Parent = Page1
+TeleportsPage.Active = true
 TeleportsPage.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
 TeleportsPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TeleportsPage.BorderSizePixel = 5
@@ -299,7 +301,6 @@ Admins.TextSize = 25.000
 
 Resize.Name = "Resize"
 Resize.Parent = PrisonGUI
-Resize.Active = false
 Resize.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
 Resize.Position = UDim2.new(0.899757504, 0, 0.891846895, 0)
 Resize.Size = UDim2.new(0, 105, 0, 50)
@@ -311,26 +312,24 @@ Resize.TextWrapped = true
 
 -- Scripts:
 
-local function LORPU_fake_script() -- Items.Script 
+local function NFHQI_fake_script() -- Items.Script 
 	local script = Instance.new('Script', Items)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.ItemsPage.Visible = true
-		script.Parent.Parent.ItemsPage.Active = true
 	end)
 end
-coroutine.wrap(LORPU_fake_script)()
-local function OKNO_fake_script() -- Exit.Script 
+coroutine.wrap(NFHQI_fake_script)()
+local function AKJHM_fake_script() -- Exit.Script 
 	local script = Instance.new('Script', Exit)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
-		script.Parent.Parent.Active = false
 	end)
 	
 end
-coroutine.wrap(OKNO_fake_script)()
-local function OTTQRW_fake_script() -- M9.Script 
+coroutine.wrap(AKJHM_fake_script)()
+local function FQWJ_fake_script() -- M9.Script 
 	local script = Instance.new('Script', M9)
 
 	local itemhandler = game.Workspace.Remote.ItemHandler
@@ -338,8 +337,8 @@ local function OTTQRW_fake_script() -- M9.Script
 		itemhandler:InvokeServer(game.Workspace.Prison_ITEMS.giver["M9"].ITEMPICKUP)
 	end)
 end
-coroutine.wrap(OTTQRW_fake_script)()
-local function VCCP_fake_script() -- R870.Script 
+coroutine.wrap(FQWJ_fake_script)()
+local function ZGQIGEV_fake_script() -- R870.Script 
 	local script = Instance.new('Script', R870)
 
 	local itemhandler = game.Workspace.Remote.ItemHandler
@@ -347,8 +346,8 @@ local function VCCP_fake_script() -- R870.Script
 		itemhandler:InvokeServer(game.Workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
 	end)
 end
-coroutine.wrap(VCCP_fake_script)()
-local function XQKHRZ_fake_script() -- AK47.Script 
+coroutine.wrap(ZGQIGEV_fake_script)()
+local function PAYSYAL_fake_script() -- AK47.Script 
 	local script = Instance.new('Script', AK47)
 
 	local itemhandler = game.Workspace.Remote.ItemHandler
@@ -356,8 +355,8 @@ local function XQKHRZ_fake_script() -- AK47.Script
 		itemhandler:InvokeServer(game.Workspace.Prison_ITEMS.giver["AK47"].ITEMPICKUP)
 	end)
 end
-coroutine.wrap(XQKHRZ_fake_script)()
-local function UTUE_fake_script() -- M4A1.Script 
+coroutine.wrap(PAYSYAL_fake_script)()
+local function QTAQU_fake_script() -- M4A1.Script 
 	local script = Instance.new('Script', M4A1)
 
 	local itemhandler = game.Workspace.Remote.ItemHandler
@@ -365,8 +364,8 @@ local function UTUE_fake_script() -- M4A1.Script
 		itemhandler:InvokeServer(game.Workspace.Prison_ITEMS.giver["M4A1"].ITEMPICKUP)
 	end)
 end
-coroutine.wrap(UTUE_fake_script)()
-local function KPAEZT_fake_script() -- Riot.Script 
+coroutine.wrap(QTAQU_fake_script)()
+local function KIVLAA_fake_script() -- Riot.Script 
 	local script = Instance.new('Script', Riot)
 
 	local itemhandler = game.Workspace.Remote.ItemHandler
@@ -374,8 +373,8 @@ local function KPAEZT_fake_script() -- Riot.Script
 		itemhandler:InvokeServer(game.Workspace.Prison_ITEMS.giver["Riot Shield"].ITEMPICKUP)
 	end)
 end
-coroutine.wrap(KPAEZT_fake_script)()
-local function DQIJS_fake_script() -- Keycard.Script 
+coroutine.wrap(KIVLAA_fake_script)()
+local function BWXGKUH_fake_script() -- Keycard.Script 
 	local script = Instance.new('Script', Keycard)
 
 	local itemhandler = game.Workspace.Remote.ItemHandler
@@ -383,8 +382,8 @@ local function DQIJS_fake_script() -- Keycard.Script
 		itemhandler:InvokeServer(game.Workspace.Prison_ITEMS.single["Key card"].ITEMPICKUP)
 	end)
 end
-coroutine.wrap(DQIJS_fake_script)()
-local function AFNBBX_fake_script() -- Hammer.Script 
+coroutine.wrap(BWXGKUH_fake_script)()
+local function SNMBWT_fake_script() -- Hammer.Script 
 	local script = Instance.new('Script', Hammer)
 
 	local itemhandler = game.Workspace.Remote.ItemHandler
@@ -392,8 +391,8 @@ local function AFNBBX_fake_script() -- Hammer.Script
 		itemhandler:InvokeServer(game.Workspace.Prison_ITEMS.giver["Hammer"].ITEMPICKUP)
 	end)
 end
-coroutine.wrap(AFNBBX_fake_script)()
-local function DKFH_fake_script() -- Knife.Script 
+coroutine.wrap(SNMBWT_fake_script)()
+local function FLKA_fake_script() -- Knife.Script 
 	local script = Instance.new('Script', Knife)
 
 	local itemhandler = game.Workspace.Remote.ItemHandler
@@ -401,38 +400,34 @@ local function DKFH_fake_script() -- Knife.Script
 		itemhandler:InvokeServer(game.Workspace.Prison_ITEMS.single["Crude Knife"].ITEMPICKUP)
 	end)
 end
-coroutine.wrap(DKFH_fake_script)()
-local function HOTUPQ_fake_script() -- Minimize.Script 
+coroutine.wrap(FLKA_fake_script)()
+local function BOZLBBH_fake_script() -- Minimize.Script 
 	local script = Instance.new('Script', Minimize)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Resize.Visible = true
-		script.Parent.Parent.Parent.Resize.Active = true
 		script.Parent.Parent.Visible = false
-		script.Parent.Parent.Active = false
 	end)
 end
-coroutine.wrap(HOTUPQ_fake_script)()
-local function QWMODE_fake_script() -- Teleports.Script 
+coroutine.wrap(BOZLBBH_fake_script)()
+local function RGFZFG_fake_script() -- Teleports.Script 
 	local script = Instance.new('Script', Teleports)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.TeleportsPage.Visible = true
-		script.Parent.Parent.TeleportsPage.Active = true
 	end)
 end
-coroutine.wrap(QWMODE_fake_script)()
-local function VHXB_fake_script() -- Exit_2.Script 
+coroutine.wrap(RGFZFG_fake_script)()
+local function CDLI_fake_script() -- Exit_2.Script 
 	local script = Instance.new('Script', Exit_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
-		script.Parent.Parent.Active = false
 	end)
 	
 end
-coroutine.wrap(VHXB_fake_script)()
-local function ROZR_fake_script() -- CriminalBase.Script 
+coroutine.wrap(CDLI_fake_script)()
+local function RYTZ_fake_script() -- CriminalBase.Script 
 	local script = Instance.new('Script', CriminalBase)
 
 	script.Parent.MouseButton1Click:Connect(function(player)
@@ -441,14 +436,14 @@ local function ROZR_fake_script() -- CriminalBase.Script
 		char:MoveTo(-976, 109, 2070)
 	end)
 end
-coroutine.wrap(ROZR_fake_script)()
-local function SJVNP_fake_script() -- Prison.Script 
+coroutine.wrap(RYTZ_fake_script)()
+local function GYUVPDS_fake_script() -- Prison.Script 
 	local script = Instance.new('Script', Prison)
 
 	
 end
-coroutine.wrap(SJVNP_fake_script)()
-local function BLAYV_fake_script() -- PoliceStation.Script 
+coroutine.wrap(GYUVPDS_fake_script)()
+local function IXGYDE_fake_script() -- PoliceStation.Script 
 	local script = Instance.new('Script', PoliceStation)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -456,21 +451,20 @@ local function BLAYV_fake_script() -- PoliceStation.Script
 		itemhandler:InvokeServer(game.Workspace.Prison_ITEMS.giver.M9.ITEMPICKUP)
 	end)
 end
-coroutine.wrap(BLAYV_fake_script)()
-local function IPXYUD_fake_script() -- Admins.Script 
+coroutine.wrap(IXGYDE_fake_script)()
+local function HPLUS_fake_script() -- Admins.Script 
 	local script = Instance.new('Script', Admins)
 
 	
 end
-coroutine.wrap(IPXYUD_fake_script)()
-local function SKPMS_fake_script() -- Resize.Script 
+coroutine.wrap(HPLUS_fake_script)()
+local function CMNQ_fake_script() -- Resize.Script 
 	local script = Instance.new('Script', Resize)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Page1.Visible = true
-		script.Parent.Page1.Active = true
 		script.Parent.Visible = false
-		script.Parent.Active = false
+	
 	end)
 end
-coroutine.wrap(SKPMS_fake_script)()
+coroutine.wrap(CMNQ_fake_script)()
