@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cynacol/RobloxPrisonLife-FE-GUI/main/source.lua"))()
